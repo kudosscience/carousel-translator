@@ -1,0 +1,20 @@
+{
+  "name": "carousel-translator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.0.1",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.330",
+    "esbuild": "^0.25.2",
+    "typescript": "^5.8.3"
+  }
+}

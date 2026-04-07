@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Translator</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 14px;
+        width: 260px;
+        font-family: Segoe UI, system-ui, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+
+      .card {
+        border-radius: 12px;
+        border: 1px solid #d1d9e6;
+        background: #ffffff;
+        padding: 12px;
+      }
+
+      .title {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .line {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        background: #0a66c2;
+        color: #ffffff;
+        padding: 9px 10px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #084f97;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card">
+      <div class="title">Carousel Translator</div>
+      <div class="line">Target language: <strong id="current-language">Loading...</strong></div>
+      <button id="open-options" type="button">Open Settings</button>
+    </section>
+    <script src="./popup.js"></script>
+  </body>
+</html>
